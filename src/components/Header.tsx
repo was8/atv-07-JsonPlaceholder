@@ -1,5 +1,5 @@
 type Props={
-    title?: string //prop nao obrigatoria
+    title?: string 
 }
 
 export const Header = ({title}: Props) =>{

@@ -26,20 +26,20 @@ export const PostForm = ({onAdd}: Props)=>{
 
     return(
         <fieldset className='border-4 mb-5 p-3'>
-            <legend className="text-2xl font-semibold">Add New Post</legend>
+            <legend className="text-2xl font-semibold">Adicionar novo post</legend>
             <input
                 value={AddTitleText}
                 onChange={handleAddTitleChange}
                 className='block border py-1.5 px-2'
                 type="text"
-                placeholder='Type a title'
+                placeholder='Digite o título'
             />
             <textarea
                 className='block border my-2 w-80 p-1'
                 value={AddBodyText}
                 onChange={handleAddBodyChange}
             ></textarea>
-            <button className='block border py-1.5 px-6 bg-slate-900 hover:bg-slate-800 text-slate-50' onClick={handleAddClick}>Add</button>
+            <button className='block border py-1.5 px-6 bg-slate-900 hover:bg-slate-800 text-slate-50' onClick={handleAddClick}>Adicionar</button>
       </fieldset>
     )
 }

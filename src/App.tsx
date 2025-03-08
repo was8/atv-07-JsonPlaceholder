@@ -22,9 +22,9 @@ function App() {
   const handleAddPost = async (title: string, body: string)=>{
     let json = await api.addNewPost(title, body, 1);
     if(json.id){
-      alert("The post was successfully added")
+      alert("o post foi criado com sucesso!")
     }else{
-      alert("Fill in the data ")
+      alert("Ocorreu algum erro!")
     }
   }
 
